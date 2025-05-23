@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".SecondActivity">
+
+    <!-- Estudios -->
+    <ImageView
+        android:id="@+id/ic_estudios"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/libro"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvEstudios"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Estudios:\n• Técnico Superior en Desarrollo de Software\n• Curso Data Science"
+        android:paddingStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/ic_estudios"
+        app:layout_constraintStart_toEndOf="@id/ic_estudios"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Experiencia -->
+    <ImageView
+        android:id="@+id/ic_exp"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/maletin"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvEstudios"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvExp"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Experiencia:\n• Proyecto P.I.E.P.\n• Proyecto Gomería"
+        android:paddingStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/ic_exp"
+        app:layout_constraintStart_toEndOf="@id/ic_exp"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <!-- Conocimientos -->
+    <ImageView
+        android:id="@+id/ic_skills"
+        android:layout_width="24dp"
+        android:layout_height="24dp"
+        android:src="@drawable/cerebro"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/tvExp"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:id="@+id/tvSkills"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Conocimientos:\n• Python\n• Git\n• HTML\n• CSS\n• Visual Basic\n• R"
+        android:paddingStart="8dp"
+        app:layout_constraintTop_toTopOf="@id/ic_skills"
+        app:layout_constraintStart_toEndOf="@id/ic_skills"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
