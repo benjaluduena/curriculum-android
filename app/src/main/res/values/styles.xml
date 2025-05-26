@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+    <resources>
+        <!-- 1. Tema base de Material Components -->
+        <style name="Theme.Ingcurriculumandroid" parent="Theme.MaterialComponents.Light.NoActionBar">
+            <!-- tus colores, tipografías, etc -->
+            <item name="colorPrimary">@color/your_primary</item>
+            <item name="colorOnPrimary">@color/white</item>
+        </style>
+
+        <!-- 2. ShapeAppearance para círculo -->
+        <style name="ShapeAppearanceOverlay.Circle" parent="">
+            <item name="cornerFamily">rounded</item>
+            <item name="cornerSize">50%</item>
+        </style>
+    </resources>
